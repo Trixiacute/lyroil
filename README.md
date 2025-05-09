@@ -1,8 +1,7 @@
 # lyroil - Discord Bot
 
 <p align="center">
-  <img src="![image](https://github.com/user-attachments/assets/aa53442b-ec5f-45f7-aed2-77b062f67941)
-" alt="lyroil Bot Logo">
+  <img src="https://github.com/user-attachments/assets/aa53442b-ec5f-45f7-aed2-77b062f67941" alt="lyroil Bot Logo">
 </p>
 
 > A versatile Discord bot inspired by Lycoris Recoil anime, featuring comprehensive anime data, LastFM integration, reputation system, and server utilities.
