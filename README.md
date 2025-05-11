@@ -6,6 +6,19 @@
 
 > A versatile Discord bot inspired by Lycoris Recoil anime, featuring comprehensive anime data, LastFM integration, reputation system, and server utilities.
 
+
+## 📣 Latest Updates
+
+Check out our [Update Log](/update.md) for detailed information about recent features and improvements.
+
+Use the `!update` command in Discord to see the latest features with an interactive interface.
+
+**Current Version:** 1.2.0 (July 2025)
+
+
+
+
+
 ## ✨ Features
 
 - **🎬 Anime Information:** Search anime, characters, schedules, and more
