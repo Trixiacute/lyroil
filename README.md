@@ -13,7 +13,7 @@ Check out our [Update Log](/update.md) for detailed information about recent fea
 
 Use the `!update` command in Discord to see the latest features with an interactive interface.
 
-**Current Version:** 1.2.0 (July 2025)
+**Current Version:** 1.2.0 (May 2025)
 
 
 
