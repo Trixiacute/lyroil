@@ -6,61 +6,59 @@
 </p>
 
 
+A versatile Discord bot inspired by Lycoris Recoil anime with features for anime fans, music enthusiasts, and community engagement.
 
-This document tracks all significant updates and changes to the lyroil Discord bot.
+![Discord Bot Status](https://img.shields.io/badge/Status-Online-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.2.0-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Version 1.2.0 (Current) - Leaderboard Enhancement Update
+## 🌟 Key Features
 
-### New Features
-- **Profile Pictures in Leaderboard**: Users' Discord avatars now appear next to their names in the leaderboard
-- **Custom Background Images**: Server administrators can now set custom background images for their server's leaderboard
-- **Interactive Navigation**: Added button controls for easier navigation through leaderboard pages
-- **Visual Improvements**: Enhanced leaderboard design with better gradients, transparency, and readability
+- **Anime Information:** Search anime, characters, schedules and more
+- **LastFM Integration:** Track your music listening with detailed statistics
+- **Reputation System:** Community engagement through rep points and streaks
+- **Leveling System:** XP-based progression with custom leaderboards
+- **Server Management:** Welcome messages, logs, and customization
+- **Custom Leaderboards:** Personalized server leaderboards with user avatars and custom backgrounds
 
-### New Commands
-- **`setlbimage <image_url or attachment> [--delete]`**: Set or remove a custom background image for your server's leaderboard
-  - Upload an image directly or provide a URL to set a custom background
-  - Use `--delete` option to remove the custom background and revert to default
-  - Requires `Manage Server` permission
-- **`testbackground`**: Generates a clean, gradient background for your server's leaderboard
-  - Creates a background with subtle decorative elements
-  - No text overlay, just a visually appealing backdrop
-  - Requires `Manage Server` permission
+## ⚡ What's New in v1.2.0
 
-### Improvements
-- **Enhanced Avatar Display**: User profile pictures appear with colored borders (special borders for top 3 ranks)
-- **Better Readability**: Semi-transparent overlays ensure text is readable regardless of background image
-- **Error Handling**: Improved error handling for image loading and file operations
-- **Visual Hierarchy**: Better visual organization with alternating row colors and highlight effects
+- **Profile Pictures in Leaderboard:** User avatars now displayed in the leaderboard
+- **Custom Background Images:** Set your own server leaderboard backgrounds
+- **Interactive Navigation:** Easy navigation with button controls
+- **Visual Enhancements:** Improved design with better gradients and transparency
 
-### Technical Improvements
-- Added proper error handling for avatar loading
-- Improved file system operations for background image storage
-- Fixed path handling across different environments
-- Added debugging and logging options for troubleshooting
+## 🔧 Technology Stack
 
-## Version 1.1.0 - LastFM Enhancement Update
+- **Node.js:** Core runtime environment
+- **Discord.js:** Framework for Discord API interaction
+- **Canvas API:** For image generation and manipulation
+- **LastFM API:** Music data integration
+- **AniList API:** Anime data integration
 
-### New Features
-- **LastFM Crown System**: Track who has listened to an album the most in a server
-- **Enhanced Music Stats**: More detailed music listening statistics and visualizations
-- **Artist Aliasing**: Create aliases for artists to improve tracking consistency
+## 📸 Screenshots
 
-### Improvements
-- Improved response time for LastFM commands
-- Enhanced error handling for API rate limits
-- Better data caching for frequently used information
+![Leaderboard Example](https://via.placeholder.com/800x400?text=Leaderboard+Example)
+![Anime Command Example](https://via.placeholder.com/800x400?text=Anime+Command+Example)
+![LastFM Example](https://via.placeholder.com/800x400?text=LastFM+Example)
 
-## Version 1.0.0 - Initial Release
+## 📝 Getting Started
 
-### Features
-- Anime data commands
-- LastFM integration
-- Reputation system
-- Server management tools
-- Leveling system
-- Utility commands
+1. Invite the bot to your server: [Invite Link](https://discord.com/oauth2/)
+2. Use `!!help` to see all available commands
+3. Check out the [full documentation](./README.md) for detailed instructions
 
----
+## 🤝 Contributing
 
-*For questions or suggestions about these updates, please join our support server.* 
+Contributions, issues, and feature requests are welcome! Check the [contributing guide](./CONTRIBUTING.md) for details.
+
+## 📄 License
+
+This project is [MIT](./LICENSE) licensed.
+
+## 💖 Support
+
+If you find this bot helpful, consider:
+- ⭐ Starring the repo
+- 🗳️ Voting for us on [Top.gg](https://top.gg/)
+- ☕ [Buying me a coffee](https://ko-fi.com/) 
