@@ -1,139 +1,59 @@
-# lyroil Bot Update Log
+# lyroil Bot - Update History
 
-This document tracks all major updates and changes to the lyroil bot. Use this as a reference for new features, improvements, and fixes.
+This document tracks all significant updates and changes to the lyroil Discord bot.
 
-## Version 1.2.0 - Custom Commands System
+## Version 1.2.0 (Current) - Leaderboard Enhancement Update
 
-**Release Date:** July 2025
+### New Features
+- **Profile Pictures in Leaderboard**: Users' Discord avatars now appear next to their names in the leaderboard
+- **Custom Background Images**: Server administrators can now set custom background images for their server's leaderboard
+- **Interactive Navigation**: Added button controls for easier navigation through leaderboard pages
+- **Visual Improvements**: Enhanced leaderboard design with better gradients, transparency, and readability
 
-### Features Added:
-- **Custom Commands System**
-  - Create text and embed-based custom commands
-  - Support for prefix and prefix-less command triggering
-  - Dynamic variable support: `{user}`, `{username}`, `{server}`, `{members}`, `{channel}`
-  - Command management: add, edit, remove, and list functions
-  - Permission-based access control
+### New Commands
+- **`setlbimage <image_url or attachment> [--delete]`**: Set or remove a custom background image for your server's leaderboard
+  - Upload an image directly or provide a URL to set a custom background
+  - Use `--delete` option to remove the custom background and revert to default
+  - Requires `Manage Server` permission
+- **`testbackground`**: Generates a clean, gradient background for your server's leaderboard
+  - Creates a background with subtle decorative elements
+  - No text overlay, just a visually appealing backdrop
+  - Requires `Manage Server` permission
 
-### Commands:
-- `!custom-commands add` - Create new custom commands
-- `!custom-commands remove <name>` - Delete existing commands
-- `!custom-commands list` - Show all available custom commands
-- `!custom-commands edit <name>` - Modify existing commands
+### Improvements
+- **Enhanced Avatar Display**: User profile pictures appear with colored borders (special borders for top 3 ranks)
+- **Better Readability**: Semi-transparent overlays ensure text is readable regardless of background image
+- **Error Handling**: Improved error handling for image loading and file operations
+- **Visual Hierarchy**: Better visual organization with alternating row colors and highlight effects
 
-### Technical Details:
-- Store custom commands in database with JSON structure
-- Support for both text responses and rich embeds
-- Automatic command validation
-- Efficient prefix-less command matching
+### Technical Improvements
+- Added proper error handling for avatar loading
+- Improved file system operations for background image storage
+- Fixed path handling across different environments
+- Added debugging and logging options for troubleshooting
 
----
+## Version 1.1.0 - LastFM Enhancement Update
 
-## Version 1.1.5 - Welcome & Goodbye System
+### New Features
+- **LastFM Crown System**: Track who has listened to an album the most in a server
+- **Enhanced Music Stats**: More detailed music listening statistics and visualizations
+- **Artist Aliasing**: Create aliases for artists to improve tracking consistency
 
-**Release Date:** May 2025
+### Improvements
+- Improved response time for LastFM commands
+- Enhanced error handling for API rate limits
+- Better data caching for frequently used information
 
-### Features Added:
-- **Welcome Messages**
-  - Customizable welcome cards for new members
-  - Custom background image support
-  - Variable-rich welcome messages
-  - Channel selection for welcome messages
-  - Toggle between card and text-only modes
+## Version 1.0.0 - Initial Release
 
-- **Goodbye Messages**
-  - Farewell messages when members leave
-  - Configurable goodbye channel
-  - Customizable message text
-
-### Commands:
-- `!welcome enable/disable` - Toggle welcome system
-- `!welcome channel #channel` - Set welcome channel
-- `!welcome set <message>` - Configure welcome message
-- `!welcome image <url>` - Set custom background
-- `!welcome textmode <card/text>` - Choose display mode
-- `!welcome preview` - Test your welcome message
-- `!goodbye enable/disable` - Toggle goodbye system
-- `!goodbye channel #channel` - Set goodbye channel
-- `!goodbye set <message>` - Configure goodbye message
-- `!goodbye preview` - Test your goodbye message
-
-### Technical Details:
-- Canvas-based image generation for welcome cards
-- Background image caching for faster rendering
-- User avatar integration with masks for clean display
-- Database persistence of welcome/goodbye settings
+### Features
+- Anime data commands
+- LastFM integration
+- Reputation system
+- Server management tools
+- Leveling system
+- Utility commands
 
 ---
 
-## Version 1.1.3 - Ticket System
-
-**Release Date:** April 2025
-
-### Features Added:
-- **Ticket Management System**
-  - User-friendly ticket creation interface
-  - Private channels for support conversations
-  - Staff role configuration
-  - Ticket logging capabilities
-  - User access management
-
-### Commands:
-- `!ticket setup` - Configure the ticket system
-- `!ticket panel` - Create an interactive ticket panel
-- `!ticket close` - Close an active ticket
-- `!ticket add <@user>` - Add users to a ticket channel
-- `!ticket remove <@user>` - Remove users from a ticket channel
-
-### Technical Details:
-- Button-based interaction for ticket creation
-- Automatic permission management
-- Ticket archiving capabilities
-- Sequential ticket numbering system
-- Log channel for tracking ticket activities
-
----
-
-## Version 1.1.0 - Performance Improvements
-
-**Release Date:** March 2025
-
-### Enhancements:
-- **Database Optimization**
-  - Improved connection reliability
-  - Query caching for faster responses
-  - Automatic retry mechanisms for failed connections
-  - Memory usage optimizations
-
-- **Command Response Time**
-  - Reduced latency in command processing
-  - Improved error handling
-  - Better caching of frequently used data
-
-- **Resource Management**
-  - Reduced CPU and memory footprint
-  - More efficient data structures
-  - Optimized image processing
-
-### Technical Details:
-- Implemented connection pooling
-- Added rate limiting for resource-intensive operations
-- Enhanced error recovery mechanisms
-- Implemented timeout handling for external APIs
-- Utilized bulk operations for database queries
-- Added graceful shutdown procedures
-
----
-
-## Upcoming Features
-
-Stay tuned for these exciting features coming soon:
-
-- **Moderation Suite** - Advanced tools for server management
-- **Leveling & Economy System** - Reward active members
-- **Web Dashboard** - Manage your bot from a browser interface
-
-For more information about upcoming features, use the `!update` command in Discord to view the latest development roadmap.
-
----
-
-_Last Updated: July 2025_ 
+*For questions or suggestions about these updates, please join our support server.* 
