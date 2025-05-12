@@ -1,97 +1,66 @@
-# lyroil - Discord Bot
+# lyroil Bot - Update History
+
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/aa53442b-ec5f-45f7-aed2-77b062f67941" alt="lyroil Bot Logo">
 </p>
 
-> A versatile Discord bot inspired by Lycoris Recoil anime, featuring comprehensive anime data, LastFM integration, reputation system, and server utilities.
 
 
-## 📣 Latest Updates
+This document tracks all significant updates and changes to the lyroil Discord bot.
 
-Check out our [Update Log](/update.md) for detailed information about recent features and improvements.
+## Version 1.2.0 (Current) - Leaderboard Enhancement Update
 
-Use the `!update` command in Discord to see the latest features with an interactive interface.
+### New Features
+- **Profile Pictures in Leaderboard**: Users' Discord avatars now appear next to their names in the leaderboard
+- **Custom Background Images**: Server administrators can now set custom background images for their server's leaderboard
+- **Interactive Navigation**: Added button controls for easier navigation through leaderboard pages
+- **Visual Improvements**: Enhanced leaderboard design with better gradients, transparency, and readability
 
-**Current Version:** 1.2.0 (May 2025)
+### New Commands
+- **`setlbimage <image_url or attachment> [--delete]`**: Set or remove a custom background image for your server's leaderboard
+  - Upload an image directly or provide a URL to set a custom background
+  - Use `--delete` option to remove the custom background and revert to default
+  - Requires `Manage Server` permission
+- **`testbackground`**: Generates a clean, gradient background for your server's leaderboard
+  - Creates a background with subtle decorative elements
+  - No text overlay, just a visually appealing backdrop
+  - Requires `Manage Server` permission
 
+### Improvements
+- **Enhanced Avatar Display**: User profile pictures appear with colored borders (special borders for top 3 ranks)
+- **Better Readability**: Semi-transparent overlays ensure text is readable regardless of background image
+- **Error Handling**: Improved error handling for image loading and file operations
+- **Visual Hierarchy**: Better visual organization with alternating row colors and highlight effects
 
+### Technical Improvements
+- Added proper error handling for avatar loading
+- Improved file system operations for background image storage
+- Fixed path handling across different environments
+- Added debugging and logging options for troubleshooting
 
+## Version 1.1.0 - LastFM Enhancement Update
 
+### New Features
+- **LastFM Crown System**: Track who has listened to an album the most in a server
+- **Enhanced Music Stats**: More detailed music listening statistics and visualizations
+- **Artist Aliasing**: Create aliases for artists to improve tracking consistency
 
-## ✨ Features
+### Improvements
+- Improved response time for LastFM commands
+- Enhanced error handling for API rate limits
+- Better data caching for frequently used information
 
-- **🎬 Anime Information:** Search anime, characters, schedules, and more
-- **🎵 LastFM Integration:** Track and share your music with detailed statistics
-- **👍 Reputation System:** Build community through reputation points and streaks
-- **⚙️ Server Management:** Member logs, welcome messages, and customization options
-- **🛠️ Utility Commands:** Various tools to enhance server experience
+## Version 1.0.0 - Initial Release
 
-## 🤖 Command Categories
-
-### Anime Commands
-- `anime` - Search for anime information with detailed stats and synopsis
-- `character` - Find detailed info about anime characters
-- `seasonal` - Browse what's currently airing this season
-- `airing` - Check currently airing anime with sorting options
-- `upcoming` - Preview upcoming anime releases
-- `schedule` - View daily or weekly airing schedules
-- `random` - Discover random anime to watch
-- `quotes` - Get inspiring or funny anime quotes
-- `staff` - Find voice actors and anime staff information
-- `studio` - Explore anime studios and their productions
-- `genre` - Browse anime by genre or tag
-
-### LastFM Commands
-- `set` - Link your LastFM account
-- `np` - Show your currently playing track
-- `recent` - View your recently played tracks
-- `toptracks` - View your most played tracks
-- `topartists` - View your most played artists
-- `profile` - View your LastFM profile and statistics
-- `cover` - Display album cover art
-- `crowns album-leaderboard` - List users ordered by number of album crowns
-- `crowns albums` - Show albums you are the top listener for within a server
-
-### Reputation Commands
-- `rep give <@user> [reason]` - Give a reputation point to a user
-- `rep status [@user]` - Check your reputation status or another user's
-- `rep leaderboard [page]` - View the reputation leaderboard
-- `rep streaks list [@user]` - View your reputation streaks or another user's
-- `rep streaks leaderboard [page]` - View the reputation streaks leaderboard
-
-### Configuration Commands
-- `alias` - Alias an artist to another name for consistent tracking
-- `disabled` - Manage disabled commands in the server
-- `logo` - Set a custom logo for bot functionalities
-- `prefix` - Change the command prefix for the server
-- `privacy` - Configure how your data is shown to other users
-- `reactions` - Set reactions for your now playing (nps) messages
-- `refresh` - Update your cached LastFM profile picture when it changes
-
-### Setup Commands
-- `member-logs channel set` - Set up a channel for member join/leave logging
-- `member-logs channel remove` - Disable member logs
-- `welcome channel set` - Set up a welcome message channel
-- `welcome edit` - Customize welcome messages with an interactive editor
-- `welcome channel remove` - Disable welcome messages
-
-### Utility Commands
-- `stats` - Display bot performance metrics and system information
-- `cache info` - View cache statistics and information
-- `cache clear [type] [pattern]` - Clear specific cache types with optional pattern matching
-
-## 🔧 General Information
-
-- **Default Prefix:** `!!` (Customizable per server)
-- **Required Permissions:** Send Messages, Embed Links, Attach Files, View Channels
-- **Support:** For issues or questions, join our [support server](https://discord.gg/)
-- **Vote:** Support the bot by [voting on Top.gg](https://top.gg/)
-
-## 📋 Full Command List
-
-Use `!!help` to see all available commands in Discord.
+### Features
+- Anime data commands
+- LastFM integration
+- Reputation system
+- Server management tools
+- Leveling system
+- Utility commands
 
 ---
 
-<p align="center">Made with ❤️ by KeziaMey | Like and enjoy coffee with Chisato & Takina!</p> 
+*For questions or suggestions about these updates, please join our support server.* 
