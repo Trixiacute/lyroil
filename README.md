@@ -54,7 +54,7 @@ A versatile Discord bot inspired by Lycoris Recoil anime with features for anime
 1. Invite the bot to your server: [Invite Link](https://discord.com/oauth2/)
 2. Use `!!help` to see all available commands
 3. Set up the ticket system with `!!ticket setup`
-4. Check out the [full documentation](./README.md) for detailed instructions
+4. Check out the [full documentation](https://chisatobot.vercel.app/docs) for detailed instructions
 
 ## 🤝 Contributing
 
