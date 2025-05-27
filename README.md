@@ -68,5 +68,5 @@ This project is [MIT](./LICENSE) licensed.
 
 If you find this bot helpful, consider:
 - ⭐ Starring the repo
-- 🗳️ Voting for us on [Top.gg](https://top.gg/)
+- 🗳️ Voting for us on [Top.gg](https://top.gg/730617706432430091)
 - ☕ [Buying me a coffee](https://ko-fi.com/)
